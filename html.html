@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neural Engineering Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <nav id="navbar">
+            <button onclick="showTab('home')">Home</button>
+            <button onclick="showTab('research')">Research</button>
+            <button onclick="showTab('people')">People</button>
+            <button onclick="showTab('publications')">Publications</button>
+            <button onclick="showTab('courses')">Courses</button>
+            <button onclick="showTab('collaborations')">Collaborations</button>
+            <button onclick="showTab('contact')">Contact</button>
+        </nav>
+        
+        <div id="home" class="tab">
+            <h2>Welcome to the Neural Engineering Lab</h2>
+            <div class="content">
+                
+
+                <p>The Neural Engineering Lab at [Your University/Institution] is a dynamic research hub dedicated to advancing the frontiers of neural science, technology, and engineering. Our mission is to unravel the mysteries of the brain, develop cutting-edge neurotechnologies, and contribute to transformative advancements in healthcare and beyond.</p>
+
+                <p>At the heart of our lab is a multidisciplinary team of researchers, engineers, and neuroscientists, driven by a passion for understanding the complexities of neural systems. We leverage the latest tools and methodologies in neural engineering to explore innovative solutions for neural disorders, brain-computer interfaces, and neuroprosthetics.</p>
+                <p>Collaboration is at the core of our philosophy. We actively engage with researchers, industry partners, and healthcare professionals to translate our discoveries into real-world applications. Through collaborative efforts, we aim to make meaningful contributions to the field of neural engineering and improve the quality of life for individuals affected by neurological conditions.</p>
+
+                <p>Explore our website to learn more about our ongoing projects, publications, and the dedicated team driving the innovation at the Neural Engineering Lab.</p>
+            </div>
+            <img src="logo_better.jpeg" alt="Logo" class="logo">
+            
+        </div>
+
+        <div id="research" class="tab">
+            <h2>Current Research Projects</h2>
+            <div class="research-container">
+                <div class="research-card"  onclick="toggleCard(this)">
+                    <div class="card-content">
+                        <h3>Neural Implants for Motor Rehabilitation</h3>        
+                        <img src="aero.jpg">    
+                        <div class="text-content">
+                            <p>Our lab is actively researching the development of advanced neural implants to facilitate motor rehabilitation in individuals with neurological disorders. By integrating neural interfaces with prosthetic devices, we aim to restore motor function and improve the quality of life for patients with conditions such as paralysis or limb loss.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="research-card"  onclick="toggleCard(this)">
+                    <div class="card-content">
+                        <h3>Neural Implants for Motor Rehabilitation</h3>
+                        <img src="neuron.jpg">
+        
+                        <div class="text-content">
+                            <p>Our lab is actively researching the development of advanced neural implants to facilitate motor rehabilitation in individuals with neurological disorders. By integrating neural interfaces with prosthetic devices, we aim to restore motor function and improve the quality of life for patients with conditions such as paralysis or limb loss.</p>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="research-card"  onclick="toggleCard(this)">
+                    <div class="card-content">
+                        <h3>Neural Implants for Motor Rehabilitation</h3>  
+                        <img src="snake.jpg" >
+                        <div class="text-content">
+                            <p>Our lab is actively researching the development of advanced neural implants to facilitate motor rehabilitation in individuals with neurological disorders. By integrating neural interfaces with prosthetic devices, we aim to restore motor function and improve the quality of life for patients with conditions such as paralysis or limb loss.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="people" class="tab">
+            <h2>People</h2>
+            <p>Meet our team!</p>
+            <div class="lab-members-container">
+                <!-- Lab Member 1 -->
+                <div class="lab-member-card" onclick="showMemberDetails(this)">
+                    <div class = "card-content">
+                        <img src="whiskers.jpg" alt="Whiskers">
+                        <div class = "text-content">
+                            <p>Whiskers, the diligent research assistant, navigates 
+                                the neural pathways with precision. His keen observations and meticulous whisker twitches 
+                                guide the team through the complexities of neural engineering experiments. Whiskers is the first 
+                                to pounce on new data, ensuring the lab's research stays sharp and focused.</p>
+                        </div>
+                        <h3>Whiskers</h3>
+                        <p>Research Assistant</p>
+                    </div>
+                </div>
+            
+                <!-- Lab Member 2 -->
+                <div class="lab-member-card" onclick="showMemberDetails(this)">
+                    <div class = "card-content">
+                        <img src="mittens.jpg" alt="Mittens">
+                        <div class = "text-content">
+                        <p>Meet Mittens, the ambitious Ph.D. candidate with a paw-sitively brilliant mind. 
+                            Armed with a passion for unraveling neural mysteries, Mittens sinks her claws into advanced research projects. 
+                            Her inquisitive nature and dedication to feline neuroscience make
+                            her a rising star in the lab, always hungry for knowledge.</p>
+                        </div>
+                        <h3>Mittens</h3>
+                        <p>Ph.D. Candidate</p>
+                    </div>
+                </div>
+            
+                <!-- Lab Member 3 -->
+                <div class="lab-member-card" onclick="showMemberDetails(this)">
+                    <div class = "card-content">
+                        <img src="shadow.jpg" alt="Shadow">
+                        <div class = "text-content">
+                            <p>Shadow, the stealthy postdoc researcher, prowls through the neural landscapes, 
+                                blending into the shadows of intricate brain circuits. With a sophisticated understanding of neural engineering, 
+                                Shadow brings a nuanced perspective to the team's endeavors. 
+                                His insightful contributions cast light on the darker corners of neural exploration.</p>
+                        </div>
+                        <h3>Shadow</h3>
+                        <p>Postdoctoral Researcher</p>
+                    </div>
+                </div>
+            
+                <!-- Lab Member 4 -->
+                <div class="lab-member-card" onclick="showMemberDetails(this)">
+                    <div class = "card-content">
+                        <img src="smokey.jpg" alt="Smokey"> 
+                        <div class = "text-content">
+                            <p>Smokey, the laid-back lab technician, keeps the neural machinery running smoothly with a touch of feline finesse. 
+                                His expertise in handling the technical intricacies ensures that experiments run like a well-oiled purr-machine. 
+                                Smokey's calm demeanor and knack for troubleshooting make him an indispensable member of the neural engineering crew.</p>
+                        </div>
+                        <h3>Smokey</h3>
+                        <p>Lab Technician</p>
+                    </div>
+                </div>
+
+                <!-- Lab Member 4 -->
+                <div class="lab-member-card" onclick="showMemberDetails(this)">
+                    <div class = "card-content">
+                        <img src="smokey.jpg" alt="Smokey">
+                        <div class = "text-content">
+                            <p>Smokey, the laid-back lab technician, keeps the neural machinery running smoothly with a touch of feline finesse. 
+                                His expertise in handling the technical intricacies ensures that experiments run like a well-oiled purr-machine. 
+                                Smokey's calm demeanor and knack for troubleshooting make him an indispensable member of the neural engineering crew.</p>
+                        </div>
+                        <h3>Smokey</h3>
+                        <p>Lab Technician</p>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        
+        <div id="publications" class="tab">
+            <h2>Publications</h2>
+            <p>Welcome to the Publications page!</p>
+            <button onclick="editPublications()">Edit</button>
+        </div>
+
+        <div id="courses" class="tab">
+            <h2>Courses</h2>
+            <h2>Our Courses</h2>
+        
+        <ul>
+            <li><strong>Introduction to Data Science</strong> (Code: DS101, ECTS: 4) - Lecturer</li>
+            <li><strong>Web Development Bootcamp</strong> (Code: WD200, ECTS: 5) - Professor</li>
+            <li><strong>Machine Learning Fundamentals</strong> (Code: ML301, ECTS: 6) - Instructor</li>
+            <!-- Add more courses as needed -->
+        </ul>
+        </div>
+
+        <div id="collaborations" class="tab">
+            <h2>Collaborations</h2>
+
+        <!-- Collaboration with Institution 1 -->
+        <div class="collaboration">
+            <h3>Neural Implants for Motor Rehabilitation</h3>
+            <p>Our research on neural implants for motor rehabilitation has been conducted in collaboration with:</p>
+            <ul>
+                <li><strong>Institution:</strong> NeuroTech Innovations</li>
+                <li><strong>Contact:</strong> Dr. Emily Johnson</li>
+                <li><strong>Email:</strong> emily.johnson@neurotechinnovations.org</li>
+                <li><strong>Phone:</strong> +1 (555) 123-4567</li>
+            </ul>
+            </div>
+        </div>
+
+        <div id="contact" class="tab">
+            <h2>Contact</h2>
+            <h2>Contact Information</h2>
+
+        <ul>
+            <li><strong>Professor:</strong> Yagmur Gucluturk</li>
+            <li><strong>Visiting Address:</strong> University Building, Room 123</li>
+            <li><strong>Lab Address:</strong> Science Lab, Floor 2</li>
+            <li><strong>Email:</strong> yagmur.gucluturk@example.com</li>
+            <li><strong>Phone:</strong> +123 456 7890</li>
+        </ul>
+        </div>
+    </div>
+    <!-- Create similar divs for other tabs (research, people, publications, courses, collaborations, contact) -->
+
+   
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia;
+    /* background: url('aero.jpg') center/cover fixed; Adjust the path to your background image */
+    background-color: #DEB380;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff; /* Set text color to be visible against the background */
+}
+
+.main-container {
+    position: bottom;
+    top: 0;
+    bottom: 0;
+    width: 170vh;
+    min-height: 200vh; /* Ensure the container takes at least the full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #112D4E;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 2);
+    z-index: 999;
+  }
+/* Set a maximum height for the content area */
+.content {
+    max-height: 100vh; /* 100% of the viewport height */
+    overflow-y: auto; /* Enable vertical scroll if needed */
+    text-align: center;
+     
+}
+h2 {
+    color: hsl(6, 84%, 84%);
+    font-size: 40px; /* Set your desired color code */
+}
+
+nav, .tab {
+    font-family: Georgia;
+    text-align: center;
+    position: relative;
+    top: -100px;
+    margin-bottom: 40px;
+
+}
+
+p{color: #F9F7F7;
+
+}
+
+a{
+  color: #0000FF;
+}
+
+
+
+nav {
+    
+    background-color: 	#112D4E;
+}
+
+nav button {
+    font-family: Georgia;
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid #F9F7F7 ;
+    background-color: #112D4E;
+    cursor: pointer;
+    color:  #F9F7F7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow to the button */
+
+    
+}
+button:hover {
+    background-color:  #3F72AF; /* Change the background color on hover if desired */
+    transition: background-color 0.3s ease;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); Add a box-shadow on hover */
+}
+
+
+.tab {
+    position: relative;
+    width: 100vh; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    /* border: 1px solid #ccc; */
+    margin-bottom: 20px; /* Add margin between tabs if needed */
+    background-color: 	#112D4E;
+    font-size: 14px;
+}
+
+.logo {
+    width: 150px; /* Adjust the width of the logo */
+    height: 150px; /* Adjust the height of the logo */
+    margin-right: 10px; /* Add margin between logo and tab content */
+}
+
+
+
+
+ /* CSS styles for lab member cards */
+.lab-members-container {
+    display: grid;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-columns: repeat(4, 250px);  
+    grid-template-rows: repeat(auto, 250px); 
+    justify-content: center; 
+    align-items: center; 
+} 
+
+.lab-member-card {
+    /* position: inherit; */
+    overflow: visible;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 1s;
+    color:  #f6ffd7;
+}
+
+.lab-member-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.lab-member-card.expanded {
+  background-color: #112D4E;
+  transform: scale(2);
+  z-index: 1; /* Ensure the expanded card is on top */
+
+}
+
+
+.text-content {
+  position: relative;
+  text-align: center;
+  
+  margin-top: 10px;
+  display: none;
+  color: #555;
+  font-size: 10px;
+  opacity: 0;
+  transition: opacity 1s, display 1s; 
+  
+  /* animation: fadeIn 1s forwards; */
+  /* animation: fadeOut 1s backwards; ; */
+  
+  
+}
+
+.lab-member-card.expanded .text-content{
+  font-size: 10px;
+  opacity: 1;
+  display: block;
+}
+
+
+
+.lab-member-card img {
+    border-radius: 50%;
+    width: 80px ; /* Set a fixed width */
+    height: 80px;
+    margin-bottom: 10px ;
+}
+
+/* Research card Stles */
+.research-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+  }
+
+  .research-card {
+    width: 400px;
+    padding: 16px;
+    margin: 20px;
+    background-color: #112D4E;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+  }
+
+  .research-card:hover {
+    transform: scale(1.2);
+  }
+
+  .research-card.expanded {
+    transform: scale(2);
+  }
+
+  .text-content {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+    animation: fadeIn 0.5s forwards;
+   
+  }
+
+  .research-card.expanded .text-content {
+    display: block;
+  }
+
+  img {
+    width: 100px; /* Adjust the width of the image rectangle */
+    height: 100%; /* Capture the full height of the card */
+    object-fit: cover;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
